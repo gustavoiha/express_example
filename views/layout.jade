@@ -1,29 +1,15 @@
 doctype
 html
   head
-    title= title
+    title #{title} - My Site
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
   body
     header
-      nav
-        ul
-          li
-            a(href="/") Home
-          li
-            a(href="/about") About
-          li
-            a(href="/contact") Contact
-    section#wrapper
+      h1 My Site
+    .container
+      .main-content
         block content
-        footer
-          section.css-table
-            section.four-column
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
-              section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+      .sidebar
+        block sidebar
+    footer
+      p Running on node with Express, Jade and Stylus
