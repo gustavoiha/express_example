@@ -7,6 +7,12 @@ router.get('/', function(req, res){
   });
 });
 
+router.get('/uou', function(req, res){
+  res.render('index', {
+    title: 'Uououououou'
+  });
+});
+
 router.get('/about', function(req, res){
   res.render('about', {
     title: 'About'
